@@ -5,3 +5,4 @@
 ## Notes:
 
 - single index.ts will hold all redux imports, to be used in rest of app.
+  Screenshot ![Basic Redux Import Diagram](screenshots/Screen Shot 2021-06-22?raw=true at 9.18.30 PM.png)
