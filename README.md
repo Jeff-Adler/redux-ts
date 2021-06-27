@@ -1,5 +1,6 @@
 # First React - Redux - TypeScript Project: NPM Search
 
+- First attempt at creating React - Redux - TS app. Credits to Stephen Grider Udemy course.
 - URL: registry.npmjs.org/-/v1/search?text=react
 
 ## Notes:
