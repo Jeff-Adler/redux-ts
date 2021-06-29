@@ -24,7 +24,7 @@ const reducer = (
 ): RepositoriesState => {
   // action.type is read from the interfaces associated with action argument. So, it knows what payload to expect for every possible type
   switch (action.type) {
-    // just received a new request to search repositories
+    // case statements function as type guards: if a case evaluates to T, the associated action is fully determined
     case 'search_repositories':
       return {
         loading: true,
