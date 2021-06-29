@@ -13,12 +13,15 @@ interface SearchRepositoriesSuccessAction {
   payload: string[];
 }
 
-interface SerachRepositoriesErrorAction {
+interface SearchRepositoriesErrorAction {
   type: 'search_repositories_error';
   payload: string;
 }
 
-const reducer = (state: RepositoriesState, action: Action): RepositoriesState => {
+const reducer = (
+  state: RepositoriesState,
+  action: SearchRepositoriesAction | SearchRepositoriesSuccessAction | SearchRepositoriesErrorAction
+): RepositoriesState => {
   switch (action.type) {
     // just received a new request to search repositories
     case 'search_repositories':
