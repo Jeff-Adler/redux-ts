@@ -22,6 +22,7 @@ const reducer = (
   state: RepositoriesState,
   action: SearchRepositoriesAction | SearchRepositoriesSuccessAction | SearchRepositoriesErrorAction
 ): RepositoriesState => {
+  // action.type is read from the interfaces associated with action argument. So, it knows what payload to expect for every possible type
   switch (action.type) {
     // just received a new request to search repositories
     case 'search_repositories':
