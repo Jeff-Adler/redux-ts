@@ -4,7 +4,12 @@ interface RepositoriesState {
   data: string[];
 }
 
-const reducer = (state: RepositoriesState, action: any): RepositoriesState => {
+interface Action {
+  type: string;
+  payload?: any;
+}
+
+const reducer = (state: RepositoriesState, action: Action): RepositoriesState => {
   switch (action.type) {
     // just received a new request to search repositories
     case 'search_repositories':
