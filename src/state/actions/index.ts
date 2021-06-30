@@ -1,5 +1,7 @@
 import { ActionType } from '../action-types';
 
+//SSOT for all IActions
+
 interface SearchRepositoriesAction {
   type: ActionType.SEARCH_REPOSITORIES;
 }
